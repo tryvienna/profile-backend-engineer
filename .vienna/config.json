@@ -6,10 +6,11 @@
   "icon": "🔧",
   "tags": ["backend", "engineering", "api", "databases", "devops"],
   "plugins": [
-    { "id": "linear", "requirement": "recommended", "reason": "Track bugs and tasks with Linear" }
+    { "id": "linear", "requirement": "recommended", "reason": "Track bugs and tasks with Linear" },
+    { "id": "profile_badge", "requirement": "recommended", "reason": "Shows active profile in menu bar" }
   ],
   "skills": [
-    { "id": "getting-started", "requirement": "recommended" }
+    { "id": "backend-craft", "requirement": "recommended" }
   ],
   "quickActions": [
     { "id": "error-triage", "requirement": "recommended" },

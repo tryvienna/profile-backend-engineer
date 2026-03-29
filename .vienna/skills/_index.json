@@ -1,13 +1,13 @@
 [
   {
-    "id": "getting-started",
-    "name": "Getting Started",
-    "description": "Introduction to using Vienna profiles — how to customize and share",
+    "id": "backend-craft",
+    "name": "Backend Craft",
+    "description": "Backend engineering best practices — APIs, databases, reliability, and observability",
     "version": "1.0.0",
     "source": "inline",
-    "icon": "👋",
-    "category": "Onboarding",
-    "tags": ["profiles", "onboarding", "getting-started"],
+    "icon": "🔧",
+    "category": "Engineering",
+    "tags": ["backend", "api", "databases", "reliability"],
     "author": { "name": "Vienna Team" }
   }
 ]
