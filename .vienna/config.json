@@ -21,7 +21,7 @@
       "reason": "Track bugs and tasks with Linear"
     },
     {
-      "id": "backend_badge",
+      "id": "backend-badge",
       "requirement": "recommended",
       "reason": "Shows profile identity in menu bar"
     }

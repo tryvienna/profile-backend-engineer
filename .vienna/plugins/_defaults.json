@@ -1,4 +1,4 @@
 {
   "version": 1,
-  "defaults": ["linear", "backend_badge"]
+  "defaults": ["linear", "backend-badge"]
 }
