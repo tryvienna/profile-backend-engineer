@@ -1,0 +1,127 @@
+[
+  {
+    "id": "error-triage",
+    "label": "Triage a production error",
+    "icon": "🚨",
+    "description": "Debug production errors with code context and root cause analysis",
+    "author": { "name": "Vienna Team" },
+    "tags": ["debugging", "sentry", "production"],
+    "options": [
+      {
+        "id": "error-sentry",
+        "label": "Find root cause from error trace",
+        "prompt": "I have a production error — I'll paste the stack trace or Sentry link. Find the root cause in our codebase, explain why it's happening, and suggest a fix with code."
+      },
+      {
+        "id": "error-logs",
+        "label": "Analyze recent error logs",
+        "prompt": "Analyze the recent error logs and group them by root cause. Identify the most impactful errors by frequency and user impact, and suggest a priority order for fixing them."
+      },
+      {
+        "id": "error-regression",
+        "label": "Is this a regression?",
+        "prompt": "Check if this error is a regression by looking at recent commits and deploys. Find the commit that likely introduced it and explain what changed."
+      }
+    ]
+  },
+  {
+    "id": "db-migration",
+    "label": "Generate a database migration",
+    "icon": "🗃️",
+    "description": "Create database migrations with safety checks",
+    "author": { "name": "Vienna Team" },
+    "tags": ["database", "migration", "sql"],
+    "options": [
+      {
+        "id": "migration-add-column",
+        "label": "Add columns or tables",
+        "prompt": "Generate a database migration to add new columns or tables. I'll describe what I need — generate the up and down migration with appropriate types, constraints, and indexes. Follow our existing migration patterns."
+      },
+      {
+        "id": "migration-index",
+        "label": "Add indexes for slow queries",
+        "prompt": "I have a slow query — analyze it and generate a migration to add the right indexes. Explain the expected performance improvement and any trade-offs (write amplification, storage)."
+      },
+      {
+        "id": "migration-safe",
+        "label": "Review migration for safety",
+        "prompt": "Review this database migration for production safety. Check for: table locks on large tables, missing indexes, irreversible changes, data loss risks, and backward compatibility with running code."
+      }
+    ]
+  },
+  {
+    "id": "pr-review",
+    "label": "Review this PR",
+    "icon": "🔍",
+    "description": "Code review focused on correctness, security, and performance",
+    "author": { "name": "Vienna Team" },
+    "tags": ["code-review", "security", "performance"],
+    "options": [
+      {
+        "id": "pr-security",
+        "label": "Security-focused review",
+        "prompt": "Review the recent code changes with a security lens. Check for: SQL injection, XSS, auth bypass, insecure deserialization, secrets in code, SSRF, and IDOR vulnerabilities. Be specific about the risk and fix for each finding."
+      },
+      {
+        "id": "pr-performance",
+        "label": "Performance-focused review",
+        "prompt": "Review the recent code changes for performance. Check for: N+1 queries, missing indexes, unbounded queries, memory leaks, unnecessary allocations, and blocking I/O in async paths. Suggest concrete optimizations."
+      },
+      {
+        "id": "pr-full",
+        "label": "Full review",
+        "prompt": "Do a thorough code review. Check correctness, error handling, edge cases, naming, and test coverage. Suggest improvements but keep nitpicks separate from real issues."
+      }
+    ]
+  },
+  {
+    "id": "api-endpoint",
+    "label": "Write an API endpoint",
+    "icon": "🔌",
+    "description": "Generate API endpoints following existing patterns",
+    "author": { "name": "Vienna Team" },
+    "tags": ["api", "rest", "graphql"],
+    "options": [
+      {
+        "id": "api-rest",
+        "label": "REST endpoint following our patterns",
+        "prompt": "Write a REST API endpoint based on my description. Follow the existing patterns in this codebase — same folder structure, middleware, validation, error handling, and response format. Include input validation and error cases."
+      },
+      {
+        "id": "api-crud",
+        "label": "Full CRUD for a resource",
+        "prompt": "Generate full CRUD endpoints (create, read, update, delete, list) for a resource I'll describe. Follow existing patterns, include pagination for list, proper HTTP status codes, and input validation."
+      },
+      {
+        "id": "api-docs",
+        "label": "Generate API documentation",
+        "prompt": "Generate API documentation for the endpoints in this codebase. Include: endpoint URL, method, request/response schemas, example payloads, error codes, and authentication requirements."
+      }
+    ]
+  },
+  {
+    "id": "incident-postmortem",
+    "label": "Draft incident postmortem",
+    "icon": "📋",
+    "description": "Structured incident postmortems and action items",
+    "author": { "name": "Vienna Team" },
+    "tags": ["incident", "postmortem", "sre"],
+    "options": [
+      {
+        "id": "postmortem-full",
+        "label": "Full postmortem document",
+        "prompt": "Draft an incident postmortem. I'll describe what happened — generate a structured document with: summary, timeline, root cause analysis, impact assessment, what went well, what went wrong, and action items with owners. Use a blameless tone."
+      },
+      {
+        "id": "postmortem-timeline",
+        "label": "Just the timeline",
+        "prompt": "Help me reconstruct the incident timeline. I'll describe what I remember — organize it chronologically with timestamps, identify gaps, and flag where we could have detected the issue earlier."
+      },
+      {
+        "id": "postmortem-actions",
+        "label": "Generate action items",
+        "prompt": "Based on this incident, generate concrete action items to prevent recurrence. Categorize as: immediate fixes, short-term improvements, and long-term systemic changes. Each item should be specific enough to create a ticket from."
+      }
+    ]
+  }
+]

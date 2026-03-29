@@ -1,0 +1,4 @@
+{
+  "version": 1,
+  "defaults": ["error-triage", "db-migration", "pr-review", "api-endpoint", "incident-postmortem"]
+}

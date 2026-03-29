@@ -1,0 +1,13 @@
+[
+  {
+    "id": "getting-started",
+    "name": "Getting Started",
+    "description": "Introduction to using Vienna profiles — how to customize and share",
+    "version": "1.0.0",
+    "source": "inline",
+    "icon": "👋",
+    "category": "Onboarding",
+    "tags": ["profiles", "onboarding", "getting-started"],
+    "author": { "name": "Vienna Team" }
+  }
+]
