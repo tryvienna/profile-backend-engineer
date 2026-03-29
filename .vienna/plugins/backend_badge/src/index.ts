@@ -3,7 +3,7 @@ import { ProfileMenuBarIcon } from './ui/MenuBarIcon';
 import { ProfileMenuBarContent } from './ui/MenuBarContent';
 
 export const profilePlugin = definePlugin({
-  id: 'backend-badge',
+  id: 'backend_badge',
   name: 'Backend Engineer',
   description: 'Tools for backend development workflows',
   icon: { text: '🔧' },

@@ -12,7 +12,7 @@
     "author": { "name": "Drift Team" }
   },
   {
-    "id": "backend-badge",
+    "id": "backend_badge",
     "name": "Backend Engineer",
     "description": "Tools for backend development workflows",
     "version": "0.0.1",
