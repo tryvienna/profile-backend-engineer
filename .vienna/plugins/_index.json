@@ -12,15 +12,14 @@
     "author": { "name": "Drift Team" }
   },
   {
-    "id": "profile_badge",
-    "name": "Profile Badge",
-    "description": "Shows the active content profile in the menu bar",
+    "id": "backend-badge",
+    "name": "Backend Engineer",
+    "description": "Tools for backend development workflows",
     "version": "0.0.1",
-    "source": "registry",
-    "registry": "https://github.com/hellodrift/registry.git",
-    "icon": "👤",
-    "category": "Utilities",
-    "tags": ["profiles", "menu-bar"],
-    "author": { "name": "Drift Team" }
+    "source": "inline",
+    "icon": "🔧",
+    "category": "Profiles",
+    "tags": ["profile", "menu-bar"],
+    "author": { "name": "Vienna Team" }
   }
 ]

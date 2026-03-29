@@ -1,0 +1,14 @@
+{
+  "name": "plugin-backend-badge",
+  "version": "0.0.1",
+  "private": true,
+  "description": "Tools for backend development workflows",
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "dependencies": {
+    "@tryvienna/sdk": "latest",
+    "zod": "^3.25.0"
+  }
+}

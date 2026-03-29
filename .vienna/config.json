@@ -1,23 +1,58 @@
 {
   "version": 1,
   "name": "Backend Engineer",
-  "description": "Quick actions and tools for backend engineers — error triage, migrations, PR reviews, API development, and incident response.",
-  "author": { "name": "Vienna Team", "url": "https://tryvienna.com" },
-  "icon": "🔧",
-  "tags": ["backend", "engineering", "api", "databases", "devops"],
+  "description": "Quick actions and tools for backend engineers \u2014 error triage, migrations, PR reviews, API development, and incident response.",
+  "author": {
+    "name": "Vienna Team",
+    "url": "https://tryvienna.com"
+  },
+  "icon": "\ud83d\udd27",
+  "tags": [
+    "backend",
+    "engineering",
+    "api",
+    "databases",
+    "devops"
+  ],
   "plugins": [
-    { "id": "linear", "requirement": "recommended", "reason": "Track bugs and tasks with Linear" },
-    { "id": "profile_badge", "requirement": "recommended", "reason": "Shows active profile in menu bar" }
+    {
+      "id": "linear",
+      "requirement": "recommended",
+      "reason": "Track bugs and tasks with Linear"
+    },
+    {
+      "id": "backend-badge",
+      "requirement": "recommended",
+      "reason": "Shows profile identity in menu bar"
+    }
   ],
   "skills": [
-    { "id": "backend-craft", "requirement": "recommended" }
+    {
+      "id": "backend-craft",
+      "requirement": "recommended"
+    }
   ],
   "quickActions": [
-    { "id": "error-triage", "requirement": "recommended" },
-    { "id": "db-migration", "requirement": "recommended" },
-    { "id": "pr-review", "requirement": "recommended" },
-    { "id": "api-endpoint", "requirement": "recommended" },
-    { "id": "incident-postmortem", "requirement": "recommended" }
+    {
+      "id": "error-triage",
+      "requirement": "recommended"
+    },
+    {
+      "id": "db-migration",
+      "requirement": "recommended"
+    },
+    {
+      "id": "pr-review",
+      "requirement": "recommended"
+    },
+    {
+      "id": "api-endpoint",
+      "requirement": "recommended"
+    },
+    {
+      "id": "incident-postmortem",
+      "requirement": "recommended"
+    }
   ],
   "registries": [],
   "settings": []
