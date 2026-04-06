@@ -5,7 +5,7 @@
     "description": "Linear project management — issues, projects, and cycles",
     "version": "0.0.1",
     "source": "registry",
-    "registry": "https://github.com/hellodrift/registry.git",
+    "registry": "https://github.com/tryvienna/registry.git",
     "icon": "📐",
     "category": "Integrations",
     "tags": ["linear", "project-management", "integration"],
